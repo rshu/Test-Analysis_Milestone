@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.318 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+testGeneralOphthalmology(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.137 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testGeneralOphthalmology(GeneralOphthalmologyTest.java:116)
+

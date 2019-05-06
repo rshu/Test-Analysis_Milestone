@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIPatientTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 1.064 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIPatientTest
+testPatientAPI(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.18 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<400>
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAPI(APIPatientTest.java:107)
+
+testPatientAsPatient(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.011 s  <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAsPatient(APIPatientTest.java:432)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'self_id' cannot be null
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAsPatient(APIPatientTest.java:432)
+
+testRepresentativeAPIHCP(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.545 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:218)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:218)
+
+testRepresentativeAPIPatient(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.268 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:360)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:360)
+

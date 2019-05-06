@@ -1,0 +1,1118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+<script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+</head>
+<body>
+<h1>
+<a href="http://findbugs.sourceforge.net">FindBugs</a> Report</h1>
+<h2>Project Information</h2>
+<p>Project: 
+		iTrust2</p>
+<p>FindBugs version: 3.0.1</p>
+<p>Code analyzed:</p>
+<ul>
+<li>/Users/adorablecat/iTrust/target/classes</li>
+</ul>
+<p>
+<br />
+<br />
+</p>
+<h2>Metrics</h2>
+<p>5948 lines of code analyzed,
+	in 104 classes, 
+	in 20 packages.</p>
+<table cellspacing="2" cellpadding="5" width="500">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">9</td>
+<td align="right">1.51</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">13</td>
+<td align="right">2.19</td>
+</tr>
+<tr class="tablerow1">
+<td>Low Priority Warnings</td>
+<td align="right">22</td>
+<td align="right">3.70</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>44</b>
+</td>
+<td align="right">
+<b>7.40</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br />
+<br />
+</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</li>
+<li>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</li>
+<li>
+<a href="#Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</li>
+<li>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</li>
+<li>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</li>
+<li>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</li>
+<li>
+<a href="#Details">Details</a>
+</li>
+</ul>
+<h1>Summary</h1>
+<table cellspacing="2" cellpadding="5" width="500">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">18</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">4</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">3</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">16</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>44</b>
+</td>
+</tr>
+</table>
+<h1>Warnings</h1>
+<p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N10206');" class="tablerow1">
+<td>
+<span class="priority-3">DE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.addCode(ICDCodeForm) might ignore java.lang.Exception</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10206">
+<a href="#DE_MIGHT_IGNORE">Bug type DE_MIGHT_IGNORE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.addCode(ICDCodeForm)<br />Exception class java.lang.Exception<br />At APIICDCodeController.java:[line 124]<br />At APIICDCodeController.java:[line 124]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10254');" class="tablerow0">
+<td>
+<span class="priority-3">DE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.deleteCode(Long) might ignore java.lang.Exception</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10254">
+<a href="#DE_MIGHT_IGNORE">Bug type DE_MIGHT_IGNORE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.deleteCode(Long)<br />Exception class java.lang.Exception<br />At APIICDCodeController.java:[line 157]<br />At APIICDCodeController.java:[line 157]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N102A2');" class="tablerow1">
+<td>
+<span class="priority-3">DE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.updateCode(Long, ICDCodeForm) might ignore java.lang.Exception</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N102A2">
+<a href="#DE_MIGHT_IGNORE">Bug type DE_MIGHT_IGNORE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.updateCode(Long, ICDCodeForm)<br />Exception class java.lang.Exception<br />At APIICDCodeController.java:[line 93]<br />At APIICDCodeController.java:[line 93]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10AC5');" class="tablerow0">
+<td>
+<span class="priority-3">DE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.utils.EmailUtil.getEmailProperties() might ignore java.lang.Exception</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10AC5">
+<a href="#DE_MIGHT_IGNORE">Bug type DE_MIGHT_IGNORE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.utils.EmailUtil<br />In method edu.ncsu.csc.itrust2.utils.EmailUtil.getEmailProperties()<br />Exception class java.lang.Exception<br />At EmailUtil.java:[line 71]<br />At EmailUtil.java:[line 71]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10593');" class="tablerow1">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10593">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm<br />In method edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm.equals(Object)<br />At ICDCodeForm.java:[lines 98-102]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N105C8');" class="tablerow0">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.forms.admin.LOINCForm defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N105C8">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.forms.admin.LOINCForm<br />In method edu.ncsu.csc.itrust2.forms.admin.LOINCForm.equals(Object)<br />At LOINCForm.java:[lines 143-148]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N107CF');" class="tablerow1">
+<td>
+<span class="priority-2">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup inherits equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N107CF">
+<a href="#HE_INHERITS_EQUALS_USE_HASHCODE">Bug type HE_INHERITS_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup<br />At GeneralCheckup.java:[lines 27-368]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10828');" class="tablerow0">
+<td>
+<span class="priority-2">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.GeneralOphthalmology inherits equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10828">
+<a href="#HE_INHERITS_EQUALS_USE_HASHCODE">Bug type HE_INHERITS_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.GeneralOphthalmology<br />At GeneralOphthalmology.java:[lines 31-77]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N1084B');" class="tablerow1">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.ICDCode defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N1084B">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.ICDCode<br />In method edu.ncsu.csc.itrust2.models.persistent.ICDCode.equals(Object)<br />At ICDCode.java:[lines 148-152]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N108B5');" class="tablerow0">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.LabProcedure defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N108B5">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.LabProcedure<br />In method edu.ncsu.csc.itrust2.models.persistent.LabProcedure.equals(Object)<br />At LabProcedure.java:[lines 410-414]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10880');" class="tablerow1">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.LOINC defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10880">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.LOINC<br />In method edu.ncsu.csc.itrust2.models.persistent.LOINC.equals(Object)<br />At LOINC.java:[lines 176-181]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N1091F');" class="tablerow0">
+<td>
+<span class="priority-2">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.OfficeVisit defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N1091F">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.OfficeVisit<br />In method edu.ncsu.csc.itrust2.models.persistent.OfficeVisit.equals(Object)<br />At OfficeVisit.java:[lines 535-539]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10954');" class="tablerow1">
+<td>
+<span class="priority-2">HE</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.OphthalmologySurgery inherits equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10954">
+<a href="#HE_INHERITS_EQUALS_USE_HASHCODE">Bug type HE_INHERITS_EQUALS_USE_HASHCODE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.OphthalmologySurgery<br />At OphthalmologySurgery.java:[lines 28-72]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10BA2');" class="tablerow0">
+<td>
+<span class="priority-2">OS</span>
+</td>
+<td>edu.ncsu.csc.itrust2.utils.EmailUtil.getEmailProperties() may fail to close stream</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10BA2">
+<a href="#OS_OPEN_STREAM">Bug type OS_OPEN_STREAM (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.utils.EmailUtil<br />In method edu.ncsu.csc.itrust2.utils.EmailUtil.getEmailProperties()<br />Need to close java.io.InputStream <br />At EmailUtil.java:[line 68]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N105FD');" class="tablerow1">
+<td>
+<span class="priority-1">Se</span>
+</td>
+<td>Class edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm defines non-transient non-serializable instance field diagnoses</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N105FD">
+<a href="#SE_BAD_FIELD">Bug type SE_BAD_FIELD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm<br />Field edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm.diagnoses<br />Actual type edu.ncsu.csc.itrust2.models.persistent.Diagnosis<br />In GeneralCheckupForm.java</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10639');" class="tablerow0">
+<td>
+<span class="priority-1">Se</span>
+</td>
+<td>Class edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm defines non-transient non-serializable instance field labProcedures</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10639">
+<a href="#SE_BAD_FIELD">Bug type SE_BAD_FIELD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm<br />Field edu.ncsu.csc.itrust2.forms.hcp.GeneralCheckupForm.labProcedures<br />Actual type edu.ncsu.csc.itrust2.models.persistent.LabProcedure<br />In GeneralCheckupForm.java</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10675');" class="tablerow1">
+<td>
+<span class="priority-1">Se</span>
+</td>
+<td>Class edu.ncsu.csc.itrust2.forms.personnel.EmergencyRecordForm defines non-transient non-serializable instance field diagnoses</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10675">
+<a href="#SE_BAD_FIELD">Bug type SE_BAD_FIELD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.forms.personnel.EmergencyRecordForm<br />Field edu.ncsu.csc.itrust2.forms.personnel.EmergencyRecordForm.diagnoses<br />Actual type edu.ncsu.csc.itrust2.models.persistent.Diagnosis<br />In EmergencyRecordForm.java</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N106B1');" class="tablerow0">
+<td>
+<span class="priority-1">Se</span>
+</td>
+<td>Class edu.ncsu.csc.itrust2.forms.personnel.EmergencyRecordForm defines non-transient non-serializable instance field prescriptions</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N106B1">
+<a href="#SE_BAD_FIELD">Bug type SE_BAD_FIELD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.forms.personnel.EmergencyRecordForm<br />Field edu.ncsu.csc.itrust2.forms.personnel.EmergencyRecordForm.prescriptions<br />Actual type edu.ncsu.csc.itrust2.models.persistent.Prescription<br />In EmergencyRecordForm.java</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N102F0');" class="tablerow1">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of user in edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.addCode(ICDCodeForm) on exception path</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N102F0">
+<a href="#NP_NULL_ON_SOME_PATH_EXCEPTION">Bug type NP_NULL_ON_SOME_PATH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.addCode(ICDCodeForm)<br />Value loaded from user<br />Dereferenced at APIICDCodeController.java:[line 127]<br />Null value at APIICDCodeController.java:[line 120]<br />Known null at APIICDCodeController.java:[line 124]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10347');" class="tablerow0">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of user in edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.deleteCode(Long) on exception path</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10347">
+<a href="#NP_NULL_ON_SOME_PATH_EXCEPTION">Bug type NP_NULL_ON_SOME_PATH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.deleteCode(Long)<br />Value loaded from user<br />Dereferenced at APIICDCodeController.java:[line 161]<br />Null value at APIICDCodeController.java:[line 153]<br />Known null at APIICDCodeController.java:[line 157]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N1039E');" class="tablerow1">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of user in edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.updateCode(Long, ICDCodeForm) on exception path</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N1039E">
+<a href="#NP_NULL_ON_SOME_PATH_EXCEPTION">Bug type NP_NULL_ON_SOME_PATH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIICDCodeController.updateCode(Long, ICDCodeForm)<br />Value loaded from user<br />Dereferenced at APIICDCodeController.java:[line 96]<br />Null value at APIICDCodeController.java:[line 89]<br />Known null at APIICDCodeController.java:[line 93]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10497');" class="tablerow0">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of user in edu.ncsu.csc.itrust2.controllers.api.APIUserController.deleteUser(String) on exception path</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10497">
+<a href="#NP_NULL_ON_SOME_PATH_EXCEPTION">Bug type NP_NULL_ON_SOME_PATH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIUserController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIUserController.deleteUser(String)<br />Value loaded from user<br />Dereferenced at APIUserController.java:[line 170]<br />Null value at APIUserController.java:[line 161]<br />Known null at APIUserController.java:[line 162]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N10B13');" class="tablerow1">
+<td>
+<span class="priority-2">OBL</span>
+</td>
+<td>edu.ncsu.csc.itrust2.utils.EmailUtil.getEmailProperties() may fail to clean up java.io.InputStream</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10B13">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Bug type OBL_UNSATISFIED_OBLIGATION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.utils.EmailUtil<br />In method edu.ncsu.csc.itrust2.utils.EmailUtil.getEmailProperties()<br />Reference type java.io.InputStream<br />1 instances of obligation remaining<br />Obligation to clean up resource created at EmailUtil.java:[line 68] is not discharged<br />Path continues at EmailUtil.java:[line 74]<br />Path continues at EmailUtil.java:[line 75]<br />Path continues at EmailUtil.java:[line 79]<br />Path continues at EmailUtil.java:[line 81]<br />Path continues at EmailUtil.java:[line 85]<br />Path continues at EmailUtil.java:[line 90]<br />Remaining obligations: {InputStream x 1}</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N10722');" class="tablerow1">
+<td>
+<span class="priority-3">DP</span>
+</td>
+<td>Invocation of reflect.Field.setAccessible(boolean), which should be invoked from within a doPrivileged block, in edu.ncsu.csc.itrust2.models.persistent.DomainObject.copyFrom(DomainObject, Boolean)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10722">
+<a href="#DP_DO_INSIDE_DO_PRIVILEGED">Bug type DP_DO_INSIDE_DO_PRIVILEGED (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.DomainObject<br />In method edu.ncsu.csc.itrust2.models.persistent.DomainObject.copyFrom(DomainObject, Boolean)<br />Called method reflect.Field.setAccessible(boolean)<br />At DomainObject.java:[line 104]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10977');" class="tablerow0">
+<td>
+<span class="priority-3">MS</span>
+</td>
+<td>edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken.lastToken should be package protected</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10977">
+<a href="#MS_PKGPROTECT">Bug type MS_PKGPROTECT (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken<br />Field edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken.lastToken<br />At PasswordResetToken.java:[line 31]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N109AB');" class="tablerow1">
+<td>
+<span class="priority-2">SBSC</span>
+</td>
+<td>new edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken(User) concatenates strings using + in a loop</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N109AB">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Bug type SBSC_USE_STRINGBUFFER_CONCATENATION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken<br />In method new edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken(User)<br />At PasswordResetToken.java:[line 75]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N106ED');" class="tablerow0">
+<td>
+<span class="priority-3">UPM</span>
+</td>
+<td>Private method edu.ncsu.csc.itrust2.models.persistent.BasicHealthMetrics.setId(Long) is never called</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N106ED">
+<a href="#UPM_UNCALLED_PRIVATE_METHOD">Bug type UPM_UNCALLED_PRIVATE_METHOD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.BasicHealthMetrics<br />In method edu.ncsu.csc.itrust2.models.persistent.BasicHealthMetrics.setId(Long)<br />At BasicHealthMetrics.java:[lines 179-180]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N108EA');" class="tablerow1">
+<td>
+<span class="priority-3">UPM</span>
+</td>
+<td>Private method edu.ncsu.csc.itrust2.models.persistent.LogEntry.setId(Long) is never called</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N108EA">
+<a href="#UPM_UNCALLED_PRIVATE_METHOD">Bug type UPM_UNCALLED_PRIVATE_METHOD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.LogEntry<br />In method edu.ncsu.csc.itrust2.models.persistent.LogEntry.setId(Long)<br />At LogEntry.java:[lines 194-195]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table cellspacing="0" width="100%" class="warningtable">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr onclick="toggleRow('N10112');" class="tablerow1">
+<td>
+<span class="priority-3">BC</span>
+</td>
+<td>Unchecked/unconfirmed cast from javax.servlet.ServletRequest to javax.servlet.http.HttpServletRequest in edu.ncsu.csc.itrust2.config.IPFilter.doFilter(ServletRequest, ServletResponse, FilterChain)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10112">
+<a href="#BC_UNCONFIRMED_CAST">Bug type BC_UNCONFIRMED_CAST (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.config.IPFilter<br />In method edu.ncsu.csc.itrust2.config.IPFilter.doFilter(ServletRequest, ServletResponse, FilterChain)<br />Actual type javax.servlet.ServletRequest<br />Expected javax.servlet.http.HttpServletRequest<br />Value loaded from request<br />At IPFilter.java:[line 34]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10164');" class="tablerow0">
+<td>
+<span class="priority-3">BC</span>
+</td>
+<td>Unchecked/unconfirmed cast from javax.servlet.ServletResponse to javax.servlet.http.HttpServletResponse in edu.ncsu.csc.itrust2.config.IPFilter.doFilter(ServletRequest, ServletResponse, FilterChain)</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10164">
+<a href="#BC_UNCONFIRMED_CAST">Bug type BC_UNCONFIRMED_CAST (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.config.IPFilter<br />In method edu.ncsu.csc.itrust2.config.IPFilter.doFilter(ServletRequest, ServletResponse, FilterChain)<br />Actual type javax.servlet.ServletResponse<br />Expected javax.servlet.http.HttpServletResponse<br />Value loaded from response<br />At IPFilter.java:[line 33]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N101B6');" class="tablerow1">
+<td>
+<span class="priority-3">BC</span>
+</td>
+<td>Unchecked/unconfirmed cast from java.util.Collection&lt;java.lang.Object&gt; to java.util.List of return value in edu.ncsu.csc.itrust2.controllers.DefaultController.index(Model)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N101B6">
+<a href="#BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">Bug type BC_UNCONFIRMED_CAST_OF_RETURN_VALUE (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.DefaultController<br />In method edu.ncsu.csc.itrust2.controllers.DefaultController.index(Model)<br />Actual type java.util.Collection&lt;java.lang.Object&gt;<br />Expected java.util.List<br />At DefaultController.java:[line 40]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N103F5');" class="tablerow0">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.createLabProcedure(LabProcedureForm)</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N103F5">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController<br />In method edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.createLabProcedure(LabProcedureForm)<br />At APILabProcedureController.java:[line 206]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N1042B');" class="tablerow1">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.updateLabProcedure(Long, LabProcedureForm)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N1042B">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController<br />In method edu.ncsu.csc.itrust2.controllers.api.APILabProcedureController.updateLabProcedure(Long, LabProcedureForm)<br />At APILabProcedureController.java:[line 301]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10461');" class="tablerow0">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.controllers.api.APIPatientController.updatePatient(String, PatientForm)</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10461">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIPatientController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIPatientController.updatePatient(String, PatientForm)<br />At APIPatientController.java:[line 161]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N104F1');" class="tablerow1">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.controllers.api.APIUserController.deleteUser(String)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N104F1">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.APIUserController<br />In method edu.ncsu.csc.itrust2.controllers.api.APIUserController.deleteUser(String)<br />At APIUserController.java:[line 168]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10527');" class="tablerow0">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.createGeneralCheckup(GeneralCheckupForm)</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10527">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController<br />In method edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.createGeneralCheckup(GeneralCheckupForm)<br />At APIGeneralCheckupController.java:[line 112]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N1055D');" class="tablerow1">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.updateGeneralCheckup(Long, GeneralCheckupForm)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N1055D">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController<br />In method edu.ncsu.csc.itrust2.controllers.api.officevisit.APIGeneralCheckupController.updateGeneralCheckup(Long, GeneralCheckupForm)<br />At APIGeneralCheckupController.java:[line 157]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10763');" class="tablerow0">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.models.persistent.DomainObject.copyFrom(DomainObject, Boolean)</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10763">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.DomainObject<br />In method edu.ncsu.csc.itrust2.models.persistent.DomainObject.copyFrom(DomainObject, Boolean)<br />At DomainObject.java:[line 119]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10799');" class="tablerow1">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.models.persistent.DomainObject.getById(Class, Object)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10799">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.DomainObject<br />In method edu.ncsu.csc.itrust2.models.persistent.DomainObject.getById(Class, Object)<br />At DomainObject.java:[line 229]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N107F2');" class="tablerow0">
+<td>
+<span class="priority-2">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup.save()</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N107F2">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup<br />In method edu.ncsu.csc.itrust2.models.persistent.GeneralCheckup.save()<br />At GeneralCheckup.java:[line 321]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10A23');" class="tablerow1">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in new edu.ncsu.csc.itrust2.models.persistent.Patient(PatientForm)</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10A23">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.Patient<br />In method new edu.ncsu.csc.itrust2.models.persistent.Patient(PatientForm)<br />At Patient.java:[line 190]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10A59');" class="tablerow0">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.models.persistent.User.delete()</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N10A59">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.User<br />In method edu.ncsu.csc.itrust2.models.persistent.User.delete()<br />At User.java:[line 375]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N10A8F');" class="tablerow1">
+<td>
+<span class="priority-3">REC</span>
+</td>
+<td>Exception is caught when Exception is not thrown in edu.ncsu.csc.itrust2.utils.DBUtil.&lt;static initializer for DBUtil&gt;()</td>
+</tr>
+<tr class="detailrow1">
+<td />
+<td>
+<p style="display: none;" id="N10A8F">
+<a href="#REC_CATCH_EXCEPTION">Bug type REC_CATCH_EXCEPTION (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.utils.DBUtil<br />In method edu.ncsu.csc.itrust2.utils.DBUtil.&lt;static initializer for DBUtil&gt;()<br />At DBUtil.java:[line 43]</p>
+</td>
+</tr>
+<tr onclick="toggleRow('N109E0');" class="tablerow0">
+<td>
+<span class="priority-2">ST</span>
+</td>
+<td>Write to static field edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken.lastToken from instance method new edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken(User)</td>
+</tr>
+<tr class="detailrow0">
+<td />
+<td>
+<p style="display: none;" id="N109E0">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Bug type ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD (click for details)</a>
+<br />In class edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken<br />In method new edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken(User)<br />Field edu.ncsu.csc.itrust2.models.persistent.PasswordResetToken.lastToken<br />At PasswordResetToken.java:[line 85]</p>
+</td>
+</tr>
+</table>
+<h1>
+<a name="Details">Details</a>
+</h1>
+<h2>
+<a name="BC_UNCONFIRMED_CAST">BC_UNCONFIRMED_CAST: Unchecked/unconfirmed cast</a>
+</h2>
+
+<p>
+This cast is unchecked, and not all instances of the type casted from can be cast to
+the type it is being cast to. Check that your program logic ensures that this
+cast will not fail.
+</p>
+
+    
+<h2>
+<a name="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">BC_UNCONFIRMED_CAST_OF_RETURN_VALUE: Unchecked/unconfirmed cast of return value from method</a>
+</h2>
+
+<p>
+This code performs an unchecked cast of the return value of a method.
+The code might be calling the method in such a way that the cast is guaranteed to be
+safe, but FindBugs is unable to verify that the cast is safe.  Check that your program logic ensures that this
+cast will not fail.
+</p>
+
+    
+<h2>
+<a name="DE_MIGHT_IGNORE">DE_MIGHT_IGNORE: Method might ignore exception</a>
+</h2>
+
+  <p> This method might ignore an exception.&nbsp; In general, exceptions
+  should be handled or reported in some way, or they should be thrown
+  out of the method.</p>
+
+    
+<h2>
+<a name="DP_DO_INSIDE_DO_PRIVILEGED">DP_DO_INSIDE_DO_PRIVILEGED: Method invoked that should be only be invoked inside a doPrivileged block</a>
+</h2>
+
+  <p> This code invokes a method that requires a security permission check.
+  If this code will be granted security permissions, but might be invoked by code that does not
+  have security permissions, then the invocation needs to occur inside a doPrivileged block.</p>
+
+    
+<h2>
+<a name="HE_EQUALS_USE_HASHCODE">HE_EQUALS_USE_HASHCODE: Class defines equals() and uses Object.hashCode()</a>
+</h2>
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre>public int hashCode() {
+  assert false : "hashCode not designed";
+  return 42; // any arbitrary constant will do
+  }</pre>
+
+    
+<h2>
+<a name="HE_INHERITS_EQUALS_USE_HASHCODE">HE_INHERITS_EQUALS_USE_HASHCODE: Class inherits equals() and uses Object.hashCode()</a>
+</h2>
+
+  <p> This class inherits <code>equals(Object)</code> from an abstract
+  superclass, and <code>hashCode()</code> from
+<code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+  <p>If you don't want to define a hashCode method, and/or don't
+   believe the object will ever be put into a HashMap/Hashtable,
+   define the <code>hashCode()</code> method
+   to throw <code>UnsupportedOperationException</code>.</p>
+
+    
+<h2>
+<a name="MS_PKGPROTECT">MS_PKGPROTECT: Field should be package protected</a>
+</h2>
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    
+<h2>
+<a name="NP_NULL_ON_SOME_PATH_EXCEPTION">NP_NULL_ON_SOME_PATH_EXCEPTION: Possible null pointer dereference in method on exception path</a>
+</h2>
+
+<p> A reference value which is null on some exception control path is
+dereferenced here.&nbsp; This may lead to a <code>NullPointerException</code>
+when the code is executed.&nbsp;
+Note that because FindBugs currently does not prune infeasible exception paths,
+this may be a false warning.</p>
+
+<p> Also note that FindBugs considers the default case of a switch statement to
+be an exception path, since the default case is often infeasible.</p>
+
+    
+<h2>
+<a name="OBL_UNSATISFIED_OBLIGATION">OBL_UNSATISFIED_OBLIGATION: Method may fail to clean up stream or resource</a>
+</h2>
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      
+<h2>
+<a name="OS_OPEN_STREAM">OS_OPEN_STREAM: Method may fail to close stream</a>
+</h2>
+
+<p> The method creates an IO stream object, does not assign it to any
+fields, pass it to other methods that might close it,
+or return it, and does not appear to close
+the stream on all paths out of the method.&nbsp; This may result in
+a file descriptor leak.&nbsp; It is generally a good
+idea to use a <code>finally</code> block to ensure that streams are
+closed.</p>
+
+    
+<h2>
+<a name="REC_CATCH_EXCEPTION">REC_CATCH_EXCEPTION: Exception is caught when Exception is not thrown</a>
+</h2>
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+  <pre>
+  try {
+    ...
+  } catch (RuntimeException e) {
+    throw e;
+  } catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+  }</pre>
+  
+     
+<h2>
+<a name="SBSC_USE_STRINGBUFFER_CONCATENATION">SBSC_USE_STRINGBUFFER_CONCATENATION: Method concatenates strings using + in a loop</a>
+</h2>
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre>
+  // This is bad
+  String s = "";
+  for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+  }
+
+  // This is better
+  StringBuffer buf = new StringBuffer();
+  for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+  }
+  String s = buf.toString();
+</pre>
+
+    
+<h2>
+<a name="SE_BAD_FIELD">SE_BAD_FIELD: Non-transient non-serializable instance field in serializable class</a>
+</h2>
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    
+<h2>
+<a name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD: Write to static field from instance method</a>
+</h2>
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    
+<h2>
+<a name="UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD: Private method is never called</a>
+</h2>
+
+<p> This private method is never called. Although it is
+possible that the method will be invoked through reflection,
+it is more likely that the method is never used, and should be
+removed.
+</p>
+
+</body>
+</html>

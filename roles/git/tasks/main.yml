@@ -1,0 +1,36 @@
+---
+  - name: Include vars
+    include_vars: variables.yml
+    
+  - name: run node main.js
+    become: yes 
+    command: chdir=/home/vagrant/fuzzer/ node main.js
+  
+  - name: add all the fuzzed files to git
+    become: yes
+    command: chdir=/home/vagrant/itrust/src git add *.*
+
+  - name: commit the fuzzed files to git
+    become: yes
+    command: chdir=/home/vagrant/itrust/src git commit -m "automated commit from ansible"
+
+  - name: Wait for 120 seconds to finish build
+    pause:
+      minutes: 5
+
+  - name: Increment variable
+    set_fact: file_number={{ file_number | int + 1 }}
+
+  - name: Creates testreport directory
+    become: yes 
+    file:
+        path: /home/vagrant/testreport/test{{file_number}}
+        state: directory
+
+  - name: save surefire reports
+    become: yes
+    command: cp -r /var/lib/jenkins/jobs/itrust/workspace/target/surefire-reports  /home/vagrant/testreport/test{{file_number}}
+
+  - name: reset the fuzzed files to initial git commit
+    become: yes
+    command: chdir=/home/vagrant/itrust/src git reset --hard 4c3f4790249f8b8ecc4e02b942528e705d5af5fc

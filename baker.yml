@@ -1,0 +1,8 @@
+name: ansible-srv
+vm:
+  ip: 192.168.33.20
+tools:
+  - ansible
+config:
+  - keys:
+    - jenkins-srv

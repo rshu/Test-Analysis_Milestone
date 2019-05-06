@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.891 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest
+testDiagnoses(edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest)  Time elapsed: 0.878 s  <<< FAILURE!
+java.lang.AssertionError: Was not deleted!
+	at edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.testDiagnoses(APIDiagnosisTest.java:242)
+

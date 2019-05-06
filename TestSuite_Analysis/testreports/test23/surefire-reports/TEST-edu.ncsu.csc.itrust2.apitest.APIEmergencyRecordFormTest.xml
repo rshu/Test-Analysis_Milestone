@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest" time="5.389" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/var/lib/jenkins/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/var/lib/jenkins/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/var/lib/jenkins/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/var/lib/jenkins/jobs/itrust/workspace/target/test-classes:/var/lib/jenkins/jobs/itrust/workspace/target/classes:/var/lib/jenkins/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/var/lib/jenkins/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar:/var/lib/jenkins/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.11/jaxb-impl-2.2.11.jar:/var/lib/jenkins/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-java/3.11.0/selenium-java-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.11.0/selenium-chrome-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.11.0/selenium-edge-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.11.0/selenium-firefox-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.11.0/selenium-ie-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.11.0/selenium-opera-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.11.0/selenium-safari-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/lib/jenkins/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/var/lib/jenkins/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/var/lib/jenkins/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/lib/jenkins/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/lib/jenkins/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/lib/jenkins/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/lib/jenkins/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/var/lib/jenkins/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/var/lib/jenkins/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/var/lib/jenkins/.m2/repository/com/paulhammant/ngwebdriver/1.0/ngwebdriver-1.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar:/var/lib/jenkins/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/var/lib/jenkins/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.52.0/selenium-htmlunit-driver-2.52.0.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/var/lib/jenkins/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/var/lib/jenkins/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/var/lib/jenkins/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/var/lib/jenkins/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/var/lib/jenkins/.m2/repository/javax/servlet/jsp/jstl/javax.servlet.jsp.jstl-api/1.2.1/javax.servlet.jsp.jstl-api-1.2.1.jar:/var/lib/jenkins/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/var/lib/jenkins/.m2/repository/org/hibernate/hibernate-validator/5.4.1.Final/hibernate-validator-5.4.1.Final.jar:/var/lib/jenkins/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar:/var/lib/jenkins/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/slf4j/jul-to-slf4j/1.7.7/jul-to-slf4j-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.7/log4j-over-slf4j-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-config/4.2.2.RELEASE/spring-security-config-4.2.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-core/4.2.4.RELEASE/spring-security-core-4.2.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-web/4.2.2.RELEASE/spring-security-web-4.2.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-jdbc/4.3.5.RELEASE/spring-jdbc-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-tx/4.3.5.RELEASE/spring-tx-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar:/var/lib/jenkins/.m2/repository/org/glassfish/javax.el/3.0.1-b08/javax.el-3.0.1-b08.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/lib/jenkins/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/var/lib/jenkins/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar:/var/lib/jenkins/.m2/repository/cglib/cglib-nodep/3.1/cglib-nodep-3.1.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar:/var/lib/jenkins/.m2/repository/opensymphony/sitemesh/2.4.2/sitemesh-2.4.2.jar:/var/lib/jenkins/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/lib/jenkins/.m2/repository/org/assertj/assertj-core/2.2.0/assertj-core-2.2.0.jar:/var/lib/jenkins/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/var/lib/jenkins/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-test/4.2.2.RELEASE/spring-security-test-4.2.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-test/4.3.5.RELEASE/spring-test-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar:/var/lib/jenkins/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-orm/4.3.5.RELEASE/spring-orm-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/aspectj/aspectjrt/1.8.9/aspectjrt-1.8.9.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/thymeleaf/3.0.0.RELEASE/thymeleaf-3.0.0.RELEASE.jar:/var/lib/jenkins/.m2/repository/ognl/ognl/3.1.3/ognl-3.1.3.jar:/var/lib/jenkins/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/var/lib/jenkins/.m2/repository/org/attoparser/attoparser/2.0.0.RELEASE/attoparser-2.0.0.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/unbescape/unbescape/1.1.3.RELEASE/unbescape-1.1.3.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/thymeleaf-spring4/3.0.2.RELEASE/thymeleaf-spring4-3.0.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-tiles2-spring4/2.1.1.RELEASE/thymeleaf-extras-tiles2-spring4-2.1.1.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-tiles2/2.1.1.RELEASE/thymeleaf-extras-tiles2-2.1.1.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2.jar:/var/lib/jenkins/.m2/repository/commons-digester/commons-digester/2.0/commons-digester-2.0.jar:/var/lib/jenkins/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-servlet/2.2.2/tiles-servlet-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/hibernate/hibernate-entitymanager/5.0.11.Final/hibernate-entitymanager-5.0.11.Final.jar:/var/lib/jenkins/.m2/repository/org/hibernate/hibernate-core/5.0.11.Final/hibernate-core-5.0.11.Final.jar:/var/lib/jenkins/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/var/lib/jenkins/.m2/repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar:/var/lib/jenkins/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/var/lib/jenkins/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/var/lib/jenkins/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/var/lib/jenkins/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar:/var/lib/jenkins/.m2/repository/io/github/bonigarcia/webdrivermanager/1.7.2/webdrivermanager-1.7.2.jar:/var/lib/jenkins/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/var/lib/jenkins/.m2/repository/com/typesafe/config/1.2.1/config-1.2.1.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/var/lib/jenkins/.m2/repository/org/rauschig/jarchivelib/0.7.1/jarchivelib-0.7.1.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar:/var/lib/jenkins/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:/var/lib/jenkins/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar:/var/lib/jenkins/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-picocontainer/1.2.4/cucumber-picocontainer-1.2.4.jar:/var/lib/jenkins/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-binding/2.4.4.RELEASE/spring-binding-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/opensymphony/ognl/2.6.11/ognl-2.6.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-webflow/2.4.4.RELEASE/spring-webflow-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-js/2.4.4.RELEASE/spring-js-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-js-resources/2.4.4.RELEASE/spring-js-resources-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/lib/jenkins/.m2/repository/com/jayway/jsonpath/json-path-assert/2.2.0/json-path-assert-2.2.0.jar:/var/lib/jenkins/.m2/repository/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar:/var/lib/jenkins/.m2/repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar:/var/lib/jenkins/.m2/repository/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/var/lib/jenkins/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/var/lib/jenkins/.m2/repository/org/springframework/session/spring-session/1.2.1.RELEASE/spring-session-1.2.1.RELEASE.jar:/var/lib/jenkins/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/var/lib/jenkins/.m2/repository/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar:/var/lib/jenkins/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /var/lib/jenkins/jobs/itrust/workspace/target/surefire 2019-03-16T02-52-49_479-jvmRun1 surefire3329678147711436981tmp surefire_09091882233867845892tmp"/>
+    <property name="surefire.test.class.path" value="/var/lib/jenkins/jobs/itrust/workspace/target/test-classes:/var/lib/jenkins/jobs/itrust/workspace/target/classes:/var/lib/jenkins/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/var/lib/jenkins/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar:/var/lib/jenkins/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.11/jaxb-impl-2.2.11.jar:/var/lib/jenkins/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-java/3.11.0/selenium-java-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.11.0/selenium-chrome-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.11.0/selenium-edge-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.11.0/selenium-firefox-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.11.0/selenium-ie-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.11.0/selenium-opera-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.11.0/selenium-safari-driver-3.11.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar:/var/lib/jenkins/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/var/lib/jenkins/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/var/lib/jenkins/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/var/lib/jenkins/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/var/lib/jenkins/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/var/lib/jenkins/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/var/lib/jenkins/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/var/lib/jenkins/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/var/lib/jenkins/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/var/lib/jenkins/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/var/lib/jenkins/.m2/repository/com/paulhammant/ngwebdriver/1.0/ngwebdriver-1.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar:/var/lib/jenkins/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/var/lib/jenkins/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/var/lib/jenkins/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.52.0/selenium-htmlunit-driver-2.52.0.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/var/lib/jenkins/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/var/lib/jenkins/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/var/lib/jenkins/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/var/lib/jenkins/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/var/lib/jenkins/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/var/lib/jenkins/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/var/lib/jenkins/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/var/lib/jenkins/.m2/repository/javax/servlet/jsp/jstl/javax.servlet.jsp.jstl-api/1.2.1/javax.servlet.jsp.jstl-api-1.2.1.jar:/var/lib/jenkins/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/var/lib/jenkins/.m2/repository/org/hibernate/hibernate-validator/5.4.1.Final/hibernate-validator-5.4.1.Final.jar:/var/lib/jenkins/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/var/lib/jenkins/.m2/repository/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar:/var/lib/jenkins/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/slf4j/jul-to-slf4j/1.7.7/jul-to-slf4j-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.7/log4j-over-slf4j-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-config/4.2.2.RELEASE/spring-security-config-4.2.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-core/4.2.4.RELEASE/spring-security-core-4.2.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-web/4.2.2.RELEASE/spring-security-web-4.2.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-jdbc/4.3.5.RELEASE/spring-jdbc-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-tx/4.3.5.RELEASE/spring-tx-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar:/var/lib/jenkins/.m2/repository/org/glassfish/javax.el/3.0.1-b08/javax.el-3.0.1-b08.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/lib/jenkins/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/var/lib/jenkins/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar:/var/lib/jenkins/.m2/repository/cglib/cglib-nodep/3.1/cglib-nodep-3.1.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar:/var/lib/jenkins/.m2/repository/opensymphony/sitemesh/2.4.2/sitemesh-2.4.2.jar:/var/lib/jenkins/.m2/repository/junit/junit/4.12/junit-4.12.jar:/var/lib/jenkins/.m2/repository/org/assertj/assertj-core/2.2.0/assertj-core-2.2.0.jar:/var/lib/jenkins/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/var/lib/jenkins/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/var/lib/jenkins/.m2/repository/org/springframework/security/spring-security-test/4.2.2.RELEASE/spring-security-test-4.2.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-test/4.3.5.RELEASE/spring-test-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar:/var/lib/jenkins/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar:/var/lib/jenkins/.m2/repository/org/springframework/spring-orm/4.3.5.RELEASE/spring-orm-4.3.5.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/aspectj/aspectjrt/1.8.9/aspectjrt-1.8.9.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/thymeleaf/3.0.0.RELEASE/thymeleaf-3.0.0.RELEASE.jar:/var/lib/jenkins/.m2/repository/ognl/ognl/3.1.3/ognl-3.1.3.jar:/var/lib/jenkins/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/var/lib/jenkins/.m2/repository/org/attoparser/attoparser/2.0.0.RELEASE/attoparser-2.0.0.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/unbescape/unbescape/1.1.3.RELEASE/unbescape-1.1.3.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/thymeleaf-spring4/3.0.2.RELEASE/thymeleaf-spring4-3.0.2.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-tiles2-spring4/2.1.1.RELEASE/thymeleaf-extras-tiles2-spring4-2.1.1.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-tiles2/2.1.1.RELEASE/thymeleaf-extras-tiles2-2.1.1.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2.jar:/var/lib/jenkins/.m2/repository/commons-digester/commons-digester/2.0/commons-digester-2.0.jar:/var/lib/jenkins/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-servlet/2.2.2/tiles-servlet-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar:/var/lib/jenkins/.m2/repository/org/hibernate/hibernate-entitymanager/5.0.11.Final/hibernate-entitymanager-5.0.11.Final.jar:/var/lib/jenkins/.m2/repository/org/hibernate/hibernate-core/5.0.11.Final/hibernate-core-5.0.11.Final.jar:/var/lib/jenkins/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/var/lib/jenkins/.m2/repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar:/var/lib/jenkins/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/var/lib/jenkins/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/var/lib/jenkins/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/var/lib/jenkins/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar:/var/lib/jenkins/.m2/repository/io/github/bonigarcia/webdrivermanager/1.7.2/webdrivermanager-1.7.2.jar:/var/lib/jenkins/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/var/lib/jenkins/.m2/repository/com/typesafe/config/1.2.1/config-1.2.1.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/var/lib/jenkins/.m2/repository/org/rauschig/jarchivelib/0.7.1/jarchivelib-0.7.1.jar:/var/lib/jenkins/.m2/repository/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar:/var/lib/jenkins/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:/var/lib/jenkins/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar:/var/lib/jenkins/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-picocontainer/1.2.4/cucumber-picocontainer-1.2.4.jar:/var/lib/jenkins/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/var/lib/jenkins/.m2/repository/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-binding/2.4.4.RELEASE/spring-binding-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/opensymphony/ognl/2.6.11/ognl-2.6.11.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-webflow/2.4.4.RELEASE/spring-webflow-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-js/2.4.4.RELEASE/spring-js-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/org/springframework/webflow/spring-js-resources/2.4.4.RELEASE/spring-js-resources-2.4.4.RELEASE.jar:/var/lib/jenkins/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/var/lib/jenkins/.m2/repository/com/jayway/jsonpath/json-path-assert/2.2.0/json-path-assert-2.2.0.jar:/var/lib/jenkins/.m2/repository/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar:/var/lib/jenkins/.m2/repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar:/var/lib/jenkins/.m2/repository/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/var/lib/jenkins/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/var/lib/jenkins/.m2/repository/org/springframework/session/spring-session/1.2.1.RELEASE/spring-session-1.2.1.RELEASE.jar:/var/lib/jenkins/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/var/lib/jenkins/.m2/repository/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/var/lib/jenkins"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="basedir" value="/var/lib/jenkins/jobs/itrust/workspace"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.4.0-133-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/var/lib/jenkins/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="/var/lib/jenkins/jobs/itrust/workspace"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="jetty.port" value="8888"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testGetNonExistentPatientRecord" classname="edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest" time="1.517">
+    <error message="Code must begin with a capital letter: T49" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Code must begin with a capital letter: T49
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+</error>
+    <system-out><![CDATA[02:53:34.677 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+02:53:34.678 [main] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@60ebe221, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b76b319, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@65cf42d3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b4b041a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@248e17b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a6e864b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3528800f]
+02:53:34.871 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+02:53:34.871 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=EST&allowPublicKeyRetrieval=true]
+02:53:34.872 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+02:53:34.872 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+02:53:34.872 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+02:53:34.879 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+02:53:35.048 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+02:53:35.312 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+02:53:35.312 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:35.313 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:35.313 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:35.314 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:35.314 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:35.314 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:35.315 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:35.316 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:35.316 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:35.317 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:35.318 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:35.318 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:35.318 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:35.319 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:35.319 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:35.320 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:35.320 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:35.320 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:35.320 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:35.321 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:35.321 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:35.323 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:35.323 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:35.324 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:35.324 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:35.330 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:35.330 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:35.331 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:35.331 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:35.331 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:35.331 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:35.332 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:35.332 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:35.332 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:35.332 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:35.333 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:35.333 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:35.333 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:35.333 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:35.334 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:35.334 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:35.334 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:35.334 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginAttempts' doesn't exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:35.335 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:35.335 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginBans' doesn't exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:35.335 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:35.335 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginLockouts' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:35.336 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:35.336 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:35.336 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:35.336 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:35.337 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:35.337 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:35.337 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:35.337 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:35.338 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:35.338 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:35.338 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:35.338 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PasswordResetTokens' doesn't exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:35.339 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:35.339 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:35.339 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:35.339 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:35.340 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:35.340 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:35.340 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:35.340 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:35.341 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:35.341 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:35.341 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:35.349 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Personnel' doesn't exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:35.350 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:35.350 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:35.351 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:35.351 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:35.351 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:35.352 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date tinyblob, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date bigint, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(110), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate tinyblob, renewals integer not null, startDate tinyblob, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+02:53:36.021 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+]]></system-out>
+  </testcase>
+  <testcase name="testEmergencyRecordFormHCPAPI" classname="edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest" time="1.317">
+    <error message="Code must begin with a capital letter: T49" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Code must begin with a capital letter: T49
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+</error>
+    <system-out><![CDATA[02:53:36.327 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+02:53:36.327 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=EST&allowPublicKeyRetrieval=true]
+02:53:36.327 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+02:53:36.328 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+02:53:36.328 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+02:53:36.332 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+02:53:36.449 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+02:53:36.658 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+02:53:36.658 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:36.663 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:36.663 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:36.664 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:36.665 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:36.665 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:36.665 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:36.666 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:36.666 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:36.666 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:36.666 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:36.671 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:36.671 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:36.672 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:36.672 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:36.672 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:36.672 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:36.673 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:36.673 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:36.673 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:36.673 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:36.673 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:36.673 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:36.674 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:36.674 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:36.676 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:36.676 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:36.676 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:36.677 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:36.678 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:36.678 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:36.679 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:36.679 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:36.679 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:36.679 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:36.680 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:36.680 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:36.680 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:36.681 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:36.681 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:36.681 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:36.681 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:36.681 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginAttempts' doesn't exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:36.682 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:36.682 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginBans' doesn't exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:36.682 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:36.682 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginLockouts' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:36.682 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:36.682 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:36.683 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:36.683 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:36.683 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:36.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:36.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:36.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:36.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:36.684 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:36.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:36.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PasswordResetTokens' doesn't exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:36.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:36.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:36.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:36.685 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:36.686 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:36.686 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:36.686 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:36.686 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:36.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:36.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:36.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:36.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Personnel' doesn't exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:36.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:36.687 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:36.688 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:36.688 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:36.688 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:36.688 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date tinyblob, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date bigint, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(110), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate tinyblob, renewals integer not null, startDate tinyblob, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+02:53:37.331 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+]]></system-out>
+  </testcase>
+  <testcase name="testEmergencyRecordFormERAPI" classname="edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest" time="1.182">
+    <error message="Code must begin with a capital letter: T49" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Code must begin with a capital letter: T49
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+</error>
+    <system-out><![CDATA[02:53:37.612 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+02:53:37.612 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=EST&allowPublicKeyRetrieval=true]
+02:53:37.613 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+02:53:37.613 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+02:53:37.613 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+02:53:37.621 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+02:53:37.712 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+02:53:37.928 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+02:53:37.928 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:37.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:37.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:37.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:37.930 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:37.931 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:37.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:37.932 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:37.933 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:37.935 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:37.935 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:37.935 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:37.935 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:37.939 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:37.939 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:37.939 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:37.940 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:37.940 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:37.940 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:37.943 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:37.943 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:37.943 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:37.943 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:37.944 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:37.944 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:37.944 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:37.944 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:37.945 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:37.945 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:37.945 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:37.945 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:37.946 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:37.946 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:37.946 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:37.946 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:37.947 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:37.947 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:37.947 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:37.947 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:37.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:37.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:37.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:37.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginAttempts' doesn't exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:37.948 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:37.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginBans' doesn't exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:37.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:37.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginLockouts' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:37.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:37.949 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:37.950 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:37.950 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:37.950 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:37.950 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:37.956 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:37.956 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PasswordResetTokens' doesn't exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:37.957 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:37.958 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:37.958 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:37.958 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:37.958 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:37.958 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:37.958 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:37.959 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:37.959 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Personnel' doesn't exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:37.959 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:37.959 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:37.960 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:37.960 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:37.960 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:37.961 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date tinyblob, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date bigint, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(110), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate tinyblob, renewals integer not null, startDate tinyblob, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+02:53:38.534 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+]]></system-out>
+  </testcase>
+  <testcase name="testEmergencyRecordForm" classname="edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest" time="1.352">
+    <error message="Code must begin with a capital letter: T49" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Code must begin with a capital letter: T49
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+</error>
+    <system-out><![CDATA[02:53:38.780 [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+02:53:38.781 [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=EST&allowPublicKeyRetrieval=true]
+02:53:38.781 [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=****}
+02:53:38.781 [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+02:53:38.781 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 100 (min=1)
+02:53:38.786 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+02:53:38.837 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+02:53:39.077 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+02:53:39.078 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:39.079 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss
+02:53:39.089 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:39.089 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKo65c0ooyqou8d1x56y37u1nau
+02:53:39.089 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.AppointmentRequests' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:39.089 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKd9uamofafbqloq2v2j2o4f0pg
+02:53:39.089 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:39.090 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table BasicHealthMetrics drop foreign key FKj6od5nqw6nvjgmpuilsfj3ad
+02:53:39.090 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.BasicHealthMetrics' doesn't exist
+alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:39.091 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKthsk14tdxoeeadlpvkot8fdhb
+02:53:39.091 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:39.091 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Diagnoses drop foreign key FKjm5cnpdmv6x9iajrypt72lguy
+02:53:39.091 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Diagnoses' doesn't exist
+alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:39.091 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKtgti6uflcm2q9uvfx4obmpwv4
+02:53:39.091 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:39.092 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKqtpf2nfiuf47019rc8gnaeb6v
+02:53:39.092 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:39.092 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FKplofss0lwup9mbnu0abrtalxx
+02:53:39.092 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:39.092 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK9tghbxo0xq6bba8p1rp7rbecg
+02:53:39.092 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralCheckups drop foreign key FK5fa5nrrfo22p8q5xiptgh83x5
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralCheckups' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKtcx79uvv1o4wrp9xqdk3hcap2
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FK6svu0my7r662s5sn2d7cgf1jq
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKfeh4gtxe0s4kr52i7u5i8tkum
+02:53:39.093 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:39.094 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKc5kn71vr8tbt5ty5cc7pfrbgf
+02:53:39.094 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:39.094 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table GeneralOphthalmology drop foreign key FKr2whnupl6f7k12gx78f5lhdx9
+02:53:39.094 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.GeneralOphthalmology' doesn't exist
+alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:39.094 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKn8ctd2oj7knwaxxfakrmwybj6
+02:53:39.094 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:39.095 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKq97sa9kb1vkse9jbn0s38drei
+02:53:39.095 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:39.095 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKd9netwr78cspphyqtctsdy9cl
+02:53:39.095 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:39.095 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LabProcedures drop foreign key FKf1qdex4yna7yac0e29xylgqt7
+02:53:39.095 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LabProcedures' doesn't exist
+alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:39.096 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginAttempts drop foreign key FK6me6sh9op6gntvqnqqqiev95q
+02:53:39.096 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginAttempts' doesn't exist
+alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:39.096 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginBans drop foreign key FKpmi5daj2jt8w5gq9maxjpro1f
+02:53:39.096 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginBans' doesn't exist
+alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:39.097 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table LoginLockouts drop foreign key FKhndsii960xs59bv7a7x5669ii
+02:53:39.097 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.LoginLockouts' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:39.097 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK2ab5y8krlqw4407jo9je2rodh
+02:53:39.097 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:39.098 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK64ijwgpf2cbt4t6vcwyj0vy77
+02:53:39.098 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:39.098 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK43k7w4nn8hxf36s3xonve9l5v
+02:53:39.098 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:39.104 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FKg3nwmi2eh9lxpys9gom75nsvx
+02:53:39.104 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:39.105 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table OphthalmologySurgery drop foreign key FK526jd5m6bguykj27g8jbl2idt
+02:53:39.105 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.OphthalmologySurgery' doesn't exist
+alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:39.105 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PasswordResetTokens drop foreign key FKdtqvlc6is6k5ibp1xc1nshrc8
+02:53:39.105 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PasswordResetTokens' doesn't exist
+alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:39.105 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FKe0d1x2xac4nte49udxrwdiew5
+02:53:39.106 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:39.106 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK8s22h2pw102ce5ytcmqmhegp3
+02:53:39.106 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:39.106 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Patients drop foreign key FK3aemk5yjohgj9y6j4lq57g4o5
+02:53:39.106 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Patients' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:39.107 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FK4xcw5y8obck13wkbeja8cxy6d
+02:53:39.107 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:39.110 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table PERSONAL_REPRESENTATIVES drop foreign key FKthu0xxghbfmojk34tnmg17qxd
+02:53:39.111 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.PERSONAL_REPRESENTATIVES' doesn't exist
+alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:39.111 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Personnel drop foreign key FKa9l63705rm5c4tf50y9h9x8rp
+02:53:39.111 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Personnel' doesn't exist
+alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:39.111 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKrr7q2rw34mv2h8p24dwo2sw39
+02:53:39.111 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:39.115 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FK11c0dywqeqm53244c088xriq0
+02:53:39.115 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:39.116 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table Prescriptions drop foreign key FKkhctha3d1ti34dbaplmn8tsyk
+02:53:39.116 [main] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'iTrust2.Prescriptions' doesn't exist
+drop table if exists AppointmentRequests
+drop table if exists BasicHealthMetrics
+drop table if exists Diagnoses
+drop table if exists Drugs
+drop table if exists FoodDiaryEntry
+drop table if exists GeneralCheckups
+drop table if exists GeneralOphthalmology
+drop table if exists hibernate_sequence
+drop table if exists Hospitals
+drop table if exists ICDCodes
+drop table if exists LabProcedures
+drop table if exists LogEntries
+drop table if exists LoginAttempts
+drop table if exists LoginBans
+drop table if exists LoginLockouts
+drop table if exists LOINCCodes
+drop table if exists OphthalmologySurgery
+drop table if exists PasswordResetTokens
+drop table if exists Patients
+drop table if exists PERSONAL_REPRESENTATIVES
+drop table if exists Personnel
+drop table if exists Prescriptions
+drop table if exists Users
+create table AppointmentRequests (id bigint not null, comments varchar(255), date tinyblob, status varchar(255), type varchar(255), hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table BasicHealthMetrics (id bigint not null, diastolic integer, hdl integer, headCircumference float, height float, houseSmokingStatus integer, ldl integer, patientSmokingStatus integer, systolic integer, tri integer, weight float, hcp_id varchar(100), patient_id varchar(100), primary key (id))
+create table Diagnoses (id bigint not null, note varchar(255), code_id bigint, visit_id bigint not null, primary key (id))
+create table Drugs (id bigint not null, code varchar(255), description varchar(255), name varchar(255), primary key (id))
+create table FoodDiaryEntry (id bigint not null, calories integer, carbs integer, date bigint, fat integer, fiber integer, food varchar(255), mealType varchar(255), patient varchar(255), protein integer, servings integer, sodium integer, sugars integer, primary key (id))
+create table GeneralCheckups (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table GeneralOphthalmology (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), diagnosis varchar(255), appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table hibernate_sequence (next_val bigint)
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+insert into hibernate_sequence values ( 1 )
+create table Hospitals (name varchar(255) not null, address varchar(255), state varchar(255), zip varchar(255), primary key (name))
+create table ICDCodes (id bigint not null, code varchar(255), description varchar(255), primary key (id))
+create table LabProcedures (id bigint not null, comments varchar(255), priority varchar(255), status varchar(255), labtech varchar(100), LOINC_code bigint, patient varchar(100), visit bigint not null, primary key (id))
+create table LogEntries (id bigint not null, logCode integer, message varchar(255), primaryUser varchar(255), secondaryUser varchar(255), time datetime, primary key (id))
+create table LoginAttempts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginBans (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LoginLockouts (id bigint not null, ip varchar(255), time datetime, user_id varchar(100), primary key (id))
+create table LOINCCodes (id bigint not null, code varchar(255), commonName varchar(255), component varchar(255), property varchar(255), primary key (id))
+create table OphthalmologySurgery (id bigint not null, date tinyblob, notes varchar(255), type varchar(255), axisOD integer, axisOS integer, cylinderOD double precision, cylinderOS double precision, sphereOD double precision, sphereOS double precision, visualAcuityOD varchar(255), visualAcuityOS varchar(255), surgeryType integer, appointment_id bigint, basichealthmetrics_id bigint, hcp_id varchar(100), hospital_id varchar(100), patient_id varchar(100), primary key (id))
+create table PasswordResetTokens (id bigint not null, creationTime bigint not null, tempPassword varchar(255), user_id varchar(100), primary key (id))
+create table Patients (address1 varchar(255), address2 varchar(255), bloodType varchar(255), causeOfDeath varchar(255), city varchar(255), dateOfBirth datetime, dateOfDeath datetime, email varchar(255), ethnicity varchar(255), firstName varchar(255), gender varchar(255), id bigint, lastName varchar(255), phone varchar(255), preferredName varchar(255), state varchar(255), zip varchar(255), self_id varchar(100) not null, father_id varchar(100), mother_id varchar(100), primary key (self_id))
+create table PERSONAL_REPRESENTATIVES (patient_id varchar(100) not null, representative_id varchar(100) not null, primary key (patient_id, representative_id))
+create table Personnel (id bigint not null, address1 varchar(255), address2 varchar(255), city varchar(255), email varchar(255), enabled bit not null, firstName varchar(255), lastName varchar(255), phone varchar(255), specialty varchar(255), state varchar(255), zip varchar(255), self_id varchar(110), primary key (id))
+create table Prescriptions (id bigint not null, dosage integer not null, endDate tinyblob, renewals integer not null, startDate tinyblob, drug_id bigint, patient_id varchar(100), prescriptions_id bigint, primary key (id))
+create table Users (username varchar(255) not null, enabled integer, password varchar(255), role varchar(255), primary key (username))
+alter table AppointmentRequests add constraint FKlpa5tri2ufo8t7bt7nusa1pss foreign key (hcp_id) references Users (username)
+alter table AppointmentRequests add constraint FKo65c0ooyqou8d1x56y37u1nau foreign key (patient_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKd9uamofafbqloq2v2j2o4f0pg foreign key (hcp_id) references Users (username)
+alter table BasicHealthMetrics add constraint FKj6od5nqw6nvjgmpuilsfj3ad foreign key (patient_id) references Users (username)
+alter table Diagnoses add constraint FKthsk14tdxoeeadlpvkot8fdhb foreign key (code_id) references ICDCodes (id)
+alter table Diagnoses add constraint FKjm5cnpdmv6x9iajrypt72lguy foreign key (visit_id) references GeneralCheckups (id)
+alter table GeneralCheckups add constraint FKtgti6uflcm2q9uvfx4obmpwv4 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralCheckups add constraint FKqtpf2nfiuf47019rc8gnaeb6v foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralCheckups add constraint FKplofss0lwup9mbnu0abrtalxx foreign key (hcp_id) references Users (username)
+alter table GeneralCheckups add constraint FK9tghbxo0xq6bba8p1rp7rbecg foreign key (hospital_id) references Hospitals (name)
+alter table GeneralCheckups add constraint FK5fa5nrrfo22p8q5xiptgh83x5 foreign key (patient_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKtcx79uvv1o4wrp9xqdk3hcap2 foreign key (appointment_id) references AppointmentRequests (id)
+alter table GeneralOphthalmology add constraint FK6svu0my7r662s5sn2d7cgf1jq foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table GeneralOphthalmology add constraint FKfeh4gtxe0s4kr52i7u5i8tkum foreign key (hcp_id) references Users (username)
+alter table GeneralOphthalmology add constraint FKc5kn71vr8tbt5ty5cc7pfrbgf foreign key (hospital_id) references Hospitals (name)
+alter table GeneralOphthalmology add constraint FKr2whnupl6f7k12gx78f5lhdx9 foreign key (patient_id) references Users (username)
+alter table LabProcedures add constraint FKn8ctd2oj7knwaxxfakrmwybj6 foreign key (labtech) references Users (username)
+alter table LabProcedures add constraint FKq97sa9kb1vkse9jbn0s38drei foreign key (LOINC_code) references LOINCCodes (id)
+alter table LabProcedures add constraint FKd9netwr78cspphyqtctsdy9cl foreign key (patient) references Users (username)
+alter table LabProcedures add constraint FKf1qdex4yna7yac0e29xylgqt7 foreign key (visit) references GeneralCheckups (id)
+alter table LoginAttempts add constraint FK6me6sh9op6gntvqnqqqiev95q foreign key (user_id) references Users (username)
+alter table LoginBans add constraint FKpmi5daj2jt8w5gq9maxjpro1f foreign key (user_id) references Users (username)
+alter table LoginLockouts add constraint FKhndsii960xs59bv7a7x5669ii foreign key (user_id) references Users (username)
+alter table OphthalmologySurgery add constraint FK2ab5y8krlqw4407jo9je2rodh foreign key (appointment_id) references AppointmentRequests (id)
+alter table OphthalmologySurgery add constraint FK64ijwgpf2cbt4t6vcwyj0vy77 foreign key (basichealthmetrics_id) references BasicHealthMetrics (id)
+alter table OphthalmologySurgery add constraint FK43k7w4nn8hxf36s3xonve9l5v foreign key (hcp_id) references Users (username)
+alter table OphthalmologySurgery add constraint FKg3nwmi2eh9lxpys9gom75nsvx foreign key (hospital_id) references Hospitals (name)
+alter table OphthalmologySurgery add constraint FK526jd5m6bguykj27g8jbl2idt foreign key (patient_id) references Users (username)
+alter table PasswordResetTokens add constraint FKdtqvlc6is6k5ibp1xc1nshrc8 foreign key (user_id) references Users (username)
+alter table Patients add constraint FKe0d1x2xac4nte49udxrwdiew5 foreign key (self_id) references Users (username)
+alter table Patients add constraint FK8s22h2pw102ce5ytcmqmhegp3 foreign key (father_id) references Users (username)
+alter table Patients add constraint FK3aemk5yjohgj9y6j4lq57g4o5 foreign key (mother_id) references Users (username)
+alter table PERSONAL_REPRESENTATIVES add constraint FK4xcw5y8obck13wkbeja8cxy6d foreign key (representative_id) references Patients (self_id)
+alter table PERSONAL_REPRESENTATIVES add constraint FKthu0xxghbfmojk34tnmg17qxd foreign key (patient_id) references Patients (self_id)
+alter table Personnel add constraint FKa9l63705rm5c4tf50y9h9x8rp foreign key (self_id) references Users (username)
+alter table Prescriptions add constraint FKrr7q2rw34mv2h8p24dwo2sw39 foreign key (drug_id) references Drugs (id)
+alter table Prescriptions add constraint FK11c0dywqeqm53244c088xriq0 foreign key (patient_id) references Users (username)
+alter table Prescriptions add constraint FKkhctha3d1ti34dbaplmn8tsyk foreign key (prescriptions_id) references GeneralCheckups (id)
+02:53:39.891 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+]]></system-out>
+  </testcase>
+</testsuite>

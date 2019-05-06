@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.2 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest
+testPrescriptionAPI(edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest)  Time elapsed: 0.194 s  <<< FAILURE!
+java.lang.AssertionError: expected:<116> but was:<null>
+	at edu.ncsu.csc.itrust2.apitest.APIPrescriptionTest.testPrescriptionAPI(APIPrescriptionTest.java:150)
+

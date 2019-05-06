@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.593 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest
+testAppointmentRequestAPI(edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest)  Time elapsed: 0.302 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at edu.ncsu.csc.itrust2.apitest.APIAppointmentRequestTest.testAppointmentRequestAPI(APIAppointmentRequestTest.java:156)
+

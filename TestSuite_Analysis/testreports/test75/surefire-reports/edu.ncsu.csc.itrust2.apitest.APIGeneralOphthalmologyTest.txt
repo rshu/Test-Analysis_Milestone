@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.19 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest
+testGeneralOphthalmologyAPI(edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest)  Time elapsed: 0.633 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:260)
+

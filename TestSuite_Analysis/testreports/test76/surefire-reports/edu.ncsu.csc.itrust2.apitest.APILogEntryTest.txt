@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APILogEntryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.185 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APILogEntryTest
+testLogByDateLarge(edu.ncsu.csc.itrust2.apitest.APILogEntryTest)  Time elapsed: 3.157 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APILogEntryTest.testLogByDateLarge(APILogEntryTest.java:103)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APILogEntryTest.testLogByDateLarge(APILogEntryTest.java:103)
+
+testLogByDate(edu.ncsu.csc.itrust2.apitest.APILogEntryTest)  Time elapsed: 0.016 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APILogEntryTest.testLogByDate(APILogEntryTest.java:68)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APILogEntryTest.testLogByDate(APILogEntryTest.java:68)
+

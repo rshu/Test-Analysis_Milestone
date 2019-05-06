@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.052 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+testMissingBHM(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testMissingBHM(GeneralOphthalmologyTest.java:188)
+
+testGeneralOphthalmology(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testGeneralOphthalmology(GeneralOphthalmologyTest.java:50)
+
+testGeneralOphthalmologyForm(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.026 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testGeneralOphthalmologyForm(GeneralOphthalmologyTest.java:164)
+

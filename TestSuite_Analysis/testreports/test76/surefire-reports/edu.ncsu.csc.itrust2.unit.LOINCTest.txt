@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LOINCTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LOINCTest
+testGetBy(edu.ncsu.csc.itrust2.unit.LOINCTest)  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.LOINCTest.testGetBy(LOINCTest.java:229)
+

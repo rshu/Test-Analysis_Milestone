@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIICDCodeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.061 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIICDCodeTest
+testCodeAPI(edu.ncsu.csc.itrust2.apitest.APIICDCodeTest)  Time elapsed: 0.054 s  <<< FAILURE!
+java.lang.AssertionError: expected:<edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm@5e382e81> but was:<edu.ncsu.csc.itrust2.forms.admin.ICDCodeForm@59fe6e01>
+	at edu.ncsu.csc.itrust2.apitest.APIICDCodeTest.testCodeAPI(APIICDCodeTest.java:63)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.59 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest
+testFoodDiaryAPIAsHCP(edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest)  Time elapsed: 0.211 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsHCP(APIFoodDiaryTest.java:225)
+
+testFoodDiaryAPIAsPatient(edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest)  Time elapsed: 0.162 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at edu.ncsu.csc.itrust2.apitest.APIFoodDiaryTest.testFoodDiaryAPIAsPatient(APIFoodDiaryTest.java:174)
+

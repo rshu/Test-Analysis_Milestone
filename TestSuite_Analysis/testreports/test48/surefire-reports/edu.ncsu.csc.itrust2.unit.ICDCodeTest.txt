@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.ICDCodeTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.222 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.ICDCodeTest
+testCodes(edu.ncsu.csc.itrust2.unit.ICDCodeTest)  Time elapsed: 0.038 s  <<< ERROR!
+java.lang.IllegalArgumentException: Code must begin with a capital letter: T11
+	at edu.ncsu.csc.itrust2.unit.ICDCodeTest.testCodes(ICDCodeTest.java:32)
+
+testInvalidCodes(edu.ncsu.csc.itrust2.unit.ICDCodeTest)  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Third character of code must be alphanumeric]: A1.A> but was:<[Code must be at least three characters]: A1.A>
+	at edu.ncsu.csc.itrust2.unit.ICDCodeTest.testInvalidCodes(ICDCodeTest.java:73)
+

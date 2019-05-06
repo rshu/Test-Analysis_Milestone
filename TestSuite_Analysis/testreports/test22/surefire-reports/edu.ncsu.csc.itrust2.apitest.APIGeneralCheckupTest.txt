@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.69 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest
+testGeneralCheckupAPI(edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest)  Time elapsed: 0.327 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGeneralCheckupAPI(APIGeneralCheckupTest.java:199)
+

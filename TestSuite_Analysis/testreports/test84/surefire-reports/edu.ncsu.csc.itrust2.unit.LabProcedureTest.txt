@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.249 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LabProcedureTest
+testLabProcedure(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.079 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.makeOfficeVisit(LabProcedureTest.java:125)
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedure(LabProcedureTest.java:86)
+
+testGetBy(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.11 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testGetBy(LabProcedureTest.java:223)
+
+testLabProcedureForm(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.051 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedureForm(LabProcedureTest.java:331)
+

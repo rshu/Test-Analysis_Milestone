@@ -1,0 +1,32 @@
+jenkins_user: jenkins
+jenkins_password: admin
+mysql_user: root
+mysql_password: root
+mongo_admin_user: myUserAdmin
+mongo_admin_password: abc123
+email_username: csc519s19.rshu
+email_password: devops2019!
+git_username: ntabassum7
+git_email: ntabass@ncsu.edu
+checkbox_repo: https://github.com/rshu/checkbox.io
+itrust_repo: https://github.com/rshu/iTrust
+file_number: 0
+jenkins_plugins:
+  - ant
+  - gradle
+  - build-timeout
+  - email-ext
+  - github-branch-source
+  - ldap
+  - matrix-auth
+  - nodejs
+  - antisamy-markup-formatter
+  - pam-auth
+  - workflow-aggregator
+  - pipeline-github-lib
+  - ssh-slaves
+  - subversion
+  - timestamper
+  - ws-cleanup
+  - job-dsl
+  - JaCoCo

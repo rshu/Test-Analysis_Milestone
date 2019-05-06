@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APILOINCTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.14 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APILOINCTest
+testCodeAPI(edu.ncsu.csc.itrust2.apitest.APILOINCTest)  Time elapsed: 0.121 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APILOINCTest.testCodeAPI(APILOINCTest.java:68)
+Caused by: java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APILOINCTest.testCodeAPI(APILOINCTest.java:68)
+

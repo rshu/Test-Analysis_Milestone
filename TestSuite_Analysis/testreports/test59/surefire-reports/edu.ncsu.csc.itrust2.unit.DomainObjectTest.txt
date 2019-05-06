@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.DomainObjectTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.126 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.DomainObjectTest
+testGetBy(edu.ncsu.csc.itrust2.unit.DomainObjectTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.DomainObjectTest.testGetBy(DomainObjectTest.java:93)
+
+testRetrieveDomainObject(edu.ncsu.csc.itrust2.unit.DomainObjectTest)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.DomainObjectTest.testRetrieveDomainObject(DomainObjectTest.java:45)
+

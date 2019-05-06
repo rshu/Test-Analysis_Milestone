@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APILabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.43 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APILabProcedureTest
+testLabProcedureLabTechAPI(edu.ncsu.csc.itrust2.apitest.APILabProcedureTest)  Time elapsed: 1.738 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2> but was:<1>
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureLabTechAPI(APILabProcedureTest.java:428)
+
+testLabProcedureHCPAPI(edu.ncsu.csc.itrust2.apitest.APILabProcedureTest)  Time elapsed: 1.876 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:328)
+

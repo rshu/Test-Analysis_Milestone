@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 4.614 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest
+testGetNonExistentPatientRecord(edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest)  Time elapsed: 1.125 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not all necessary fields for basic health metrics were submitted.
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+
+testEmergencyRecordFormHCPAPI(edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest)  Time elapsed: 1.109 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not all necessary fields for basic health metrics were submitted.
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+
+testEmergencyRecordFormERAPI(edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest)  Time elapsed: 1.127 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not all necessary fields for basic health metrics were submitted.
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+
+testEmergencyRecordForm(edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest)  Time elapsed: 1.236 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not all necessary fields for basic health metrics were submitted.
+	at edu.ncsu.csc.itrust2.apitest.APIEmergencyRecordFormTest.setup(APIEmergencyRecordFormTest.java:59)
+

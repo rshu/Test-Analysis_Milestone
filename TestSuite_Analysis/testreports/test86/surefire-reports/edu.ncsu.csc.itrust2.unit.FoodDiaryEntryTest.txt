@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.045 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest
+testDiaryEntry(edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest)  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.testDiaryEntry(FoodDiaryEntryTest.java:60)
+

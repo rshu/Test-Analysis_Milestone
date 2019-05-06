@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.PatientTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.201 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.PatientTest
+testFieldValidation(edu.ncsu.csc.itrust2.unit.PatientTest)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: expected exception during validation
+	at edu.ncsu.csc.itrust2.unit.PatientTest.expectFailure(PatientTest.java:258)
+	at edu.ncsu.csc.itrust2.unit.PatientTest.testFieldValidation(PatientTest.java:148)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.DomainObjectTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.088 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.DomainObjectTest
+testCreateDomainObject(edu.ncsu.csc.itrust2.unit.DomainObjectTest)  Time elapsed: 0.025 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.DomainObjectTest.testCreateDomainObject(DomainObjectTest.java:30)
+
+testCopy(edu.ncsu.csc.itrust2.unit.DomainObjectTest)  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.DomainObjectTest.testCopy(DomainObjectTest.java:78)
+

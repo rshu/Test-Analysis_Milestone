@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIPatientTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 1.417 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIPatientTest
+testPatientAPI(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.247 s  <<< FAILURE!
+java.lang.AssertionError: Range for response status value 200 expected:<CLIENT_ERROR> but was:<SUCCESSFUL>
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAPI(APIPatientTest.java:114)
+
+testPatientAsPatient(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testPatientAsPatient(APIPatientTest.java:436)
+
+testRepresentativeAPIHCP(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.699 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIHCP(APIPatientTest.java:218)
+
+testRepresentativeAPIPatient(edu.ncsu.csc.itrust2.apitest.APIPatientTest)  Time elapsed: 0.376 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at edu.ncsu.csc.itrust2.apitest.APIPatientTest.testRepresentativeAPIPatient(APIPatientTest.java:370)
+

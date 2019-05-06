@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.663 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest
+testPreScheduledGeneralCheckup(edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest)  Time elapsed: 0.275 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testPreScheduledGeneralCheckup(APIGeneralCheckupTest.java:133)
+
+testGeneralCheckupAPI(edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest)  Time elapsed: 0.319 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGeneralCheckupAPI(APIGeneralCheckupTest.java:191)
+

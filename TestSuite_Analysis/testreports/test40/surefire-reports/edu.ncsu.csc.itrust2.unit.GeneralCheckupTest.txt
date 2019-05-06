@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.GeneralCheckupTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.115 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.GeneralCheckupTest
+testGeneralCheckups(edu.ncsu.csc.itrust2.unit.GeneralCheckupTest)  Time elapsed: 0.074 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.GeneralCheckupTest.testGeneralCheckups(GeneralCheckupTest.java:53)
+
+testGeneralCheckupForm(edu.ncsu.csc.itrust2.unit.GeneralCheckupTest)  Time elapsed: 0.04 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.GeneralCheckupTest.testGeneralCheckupForm(GeneralCheckupTest.java:201)
+

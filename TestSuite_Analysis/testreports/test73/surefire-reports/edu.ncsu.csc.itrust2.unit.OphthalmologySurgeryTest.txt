@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.171 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest
+testOphthalmologySurgery(edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest)  Time elapsed: 0.146 s  <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.lambda$testOphthalmologySurgery$1(OphthalmologySurgeryTest.java:39)
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.testOphthalmologySurgery(OphthalmologySurgeryTest.java:39)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`iTrust2`.`LabProcedures`, CONSTRAINT `FKf1qdex4yna7yac0e29xylgqt7` FOREIGN KEY (`visit`) REFERENCES `GeneralCheckups` (`id`))
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.lambda$testOphthalmologySurgery$1(OphthalmologySurgeryTest.java:39)
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.testOphthalmologySurgery(OphthalmologySurgeryTest.java:39)
+

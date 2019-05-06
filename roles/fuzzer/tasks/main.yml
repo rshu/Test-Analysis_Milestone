@@ -1,0 +1,43 @@
+---  
+  - name: Include vars
+    include_vars: variables.yml
+
+  - name: Creates directory
+    become: yes 
+    file:
+        path: /home/vagrant/fuzzer
+        state: directory
+
+  - name: copy package.json file to jobs folder
+    become: yes
+    template: src=fuzzing/package.json dest=/home/vagrant/fuzzer
+
+  - name: copy main.js file to jobs folder
+    become: yes
+    template: src=fuzzing/main.js dest=/home/vagrant/fuzzer
+
+  - name: npm install
+    become: yes
+    command: chdir=/home/vagrant/fuzzer/ npm install
+
+  - name: git clone itrust repo
+    become: yes
+    git: 
+        repo: https://github.com/rshu/iTrust.git
+        dest: /home/vagrant/itrust
+
+  - name: copy the post-commit hook
+    become: yes
+    template: src=templates/post-commit dest=/home/vagrant/itrust/.git/hooks
+
+  - name: chmod git hook
+    become: yes
+    command: chdir=/home/vagrant/itrust/.git/hooks chmod +x post-commit
+
+  - name: changing git username
+    become: yes
+    command: git config --global user.name {{git_username}}
+
+  - name: changing git username
+    become: yes
+    command: git config --global user.email {{git_email}}

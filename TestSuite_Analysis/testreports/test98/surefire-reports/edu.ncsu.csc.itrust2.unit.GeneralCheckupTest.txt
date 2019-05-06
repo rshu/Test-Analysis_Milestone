@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.GeneralCheckupTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.403 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.GeneralCheckupTest
+testGeneralCheckups(edu.ncsu.csc.itrust2.unit.GeneralCheckupTest)  Time elapsed: 0.381 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.GeneralCheckupTest.testGeneralCheckups(GeneralCheckupTest.java:139)
+

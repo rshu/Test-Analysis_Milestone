@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.087 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest
+testOphthalmologySurgery(edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest)  Time elapsed: 0.069 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.testOphthalmologySurgery(OphthalmologySurgeryTest.java:53)
+
+testOphthalmologySurgeryForm(edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest)  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.testOphthalmologySurgeryForm(OphthalmologySurgeryTest.java:154)
+

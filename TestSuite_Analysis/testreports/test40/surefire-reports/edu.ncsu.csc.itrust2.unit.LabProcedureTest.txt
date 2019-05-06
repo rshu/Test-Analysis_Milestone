@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.574 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LabProcedureTest
+testLabProcedure(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.447 s  <<< FAILURE!
+java.lang.AssertionError: expected:<CRITICAL> but was:<HIGH>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedure(LabProcedureTest.java:96)
+
+testGetBy(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.077 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testGetBy(LabProcedureTest.java:223)
+
+testLabProcedureForm(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.IllegalArgumentException: Weight cannot be less than .1 or greater than 999.9
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedureForm(LabProcedureTest.java:331)
+

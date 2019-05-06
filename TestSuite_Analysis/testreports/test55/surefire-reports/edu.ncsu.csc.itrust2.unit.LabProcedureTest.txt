@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.608 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LabProcedureTest
+testGetBy(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.209 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testGetBy(LabProcedureTest.java:249)
+
+testLabProcedureForm(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.102 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedureForm(LabProcedureTest.java:348)
+

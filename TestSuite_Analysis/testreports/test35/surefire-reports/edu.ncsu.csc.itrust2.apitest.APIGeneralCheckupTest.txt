@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.814 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest
+testGeneralCheckupAPI(edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest)  Time elapsed: 0.49 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralCheckupTest.testGeneralCheckupAPI(APIGeneralCheckupTest.java:256)
+

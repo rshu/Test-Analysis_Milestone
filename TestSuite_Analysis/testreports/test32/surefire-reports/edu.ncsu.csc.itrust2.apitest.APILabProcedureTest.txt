@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APILabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 6.219 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APILabProcedureTest
+testLabProcedureLabTechAPI(edu.ncsu.csc.itrust2.apitest.APILabProcedureTest)  Time elapsed: 1.787 s  <<< ERROR!
+javax.validation.ConstraintViolationException: 
+Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.LabProcedure] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=loinc, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.LabProcedure, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.createLabProcedure(APILabProcedureTest.java:135)
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureLabTechAPI(APILabProcedureTest.java:395)
+
+testLabProcedureHCPAPI(edu.ncsu.csc.itrust2.apitest.APILabProcedureTest)  Time elapsed: 1.49 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:322)
+

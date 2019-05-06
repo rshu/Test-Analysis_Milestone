@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.512 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest
+testDiagnoses(edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest)  Time elapsed: 0.498 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.apitest.APIDiagnosisTest.testDiagnoses(APIDiagnosisTest.java:159)
+

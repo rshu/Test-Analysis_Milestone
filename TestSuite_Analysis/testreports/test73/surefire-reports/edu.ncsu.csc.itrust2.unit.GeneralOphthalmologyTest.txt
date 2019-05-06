@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.288 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+testMissingBHM(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.135 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testMissingBHM(GeneralOphthalmologyTest.java:221)
+
+testGeneralOphthalmology(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.122 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testGeneralOphthalmology(GeneralOphthalmologyTest.java:86)
+

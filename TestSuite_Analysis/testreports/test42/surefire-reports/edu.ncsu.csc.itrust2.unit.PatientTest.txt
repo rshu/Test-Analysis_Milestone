@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.PatientTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.148 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.PatientTest
+testPatientDateOfDeath(edu.ncsu.csc.itrust2.unit.PatientTest)  Time elapsed: 0.103 s  <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at edu.ncsu.csc.itrust2.unit.PatientTest.testPatientDateOfDeath(PatientTest.java:70)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'self_id' cannot be null
+	at edu.ncsu.csc.itrust2.unit.PatientTest.testPatientDateOfDeath(PatientTest.java:70)
+
+personalRepresentatives(edu.ncsu.csc.itrust2.unit.PatientTest)  Time elapsed: 0.018 s  <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at edu.ncsu.csc.itrust2.unit.PatientTest.personalRepresentatives(PatientTest.java:210)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'self_id' cannot be null
+	at edu.ncsu.csc.itrust2.unit.PatientTest.personalRepresentatives(PatientTest.java:210)
+

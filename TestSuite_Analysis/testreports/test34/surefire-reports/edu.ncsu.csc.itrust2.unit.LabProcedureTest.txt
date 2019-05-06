@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.024 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LabProcedureTest
+testLabProcedure(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.402 s  <<< FAILURE!
+java.lang.AssertionError: expected:<CRITICAL> but was:<HIGH>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedure(LabProcedureTest.java:96)
+
+testGetBy(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.335 s  <<< FAILURE!
+java.lang.AssertionError: expected:<CRITICAL> but was:<HIGH>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testGetBy(LabProcedureTest.java:269)
+
+testLabProcedureForm(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.286 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]> but was:<[2]>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedureForm(LabProcedureTest.java:357)
+

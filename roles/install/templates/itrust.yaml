@@ -1,0 +1,14 @@
+- job:
+    name: itrust
+    description: 'Build itrust'
+    project-type: freestyle
+    scm:
+      - git:
+            skip-tag: true
+            url: /home/vagrant/itrust/.git
+    triggers:
+      - pollscm:
+          cron: ""
+    builders:
+      - shell: 'mvn -f pom-data.xml process-test-classes'
+      - shell: 'mvn clean test verify checkstyle:checkstyle -Djetty.port=8888'

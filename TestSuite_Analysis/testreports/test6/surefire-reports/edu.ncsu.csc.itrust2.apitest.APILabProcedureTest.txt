@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APILabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 5.977 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APILabProcedureTest
+testLabProcedureLabTechAPI(edu.ncsu.csc.itrust2.apitest.APILabProcedureTest)  Time elapsed: 1.522 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.makeGeneralCheckup(APILabProcedureTest.java:152)
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.createLabProcedure(APILabProcedureTest.java:129)
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureLabTechAPI(APILabProcedureTest.java:395)
+
+testLabProcedureHCPAPI(edu.ncsu.csc.itrust2.apitest.APILabProcedureTest)  Time elapsed: 1.627 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.apitest.APILabProcedureTest.testLabProcedureHCPAPI(APILabProcedureTest.java:255)
+

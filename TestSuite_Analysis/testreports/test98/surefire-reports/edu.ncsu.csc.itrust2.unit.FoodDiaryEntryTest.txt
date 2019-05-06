@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest
+testDiaryEntryInvalid(edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.testDiaryEntryInvalid(FoodDiaryEntryTest.java:120)
+
+testDiaryEntry(edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Calories must be a non-negative integer!
+	at edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.testDiaryEntry(FoodDiaryEntryTest.java:49)
+
+testGetByPatient(edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Calories must be a non-negative integer!
+	at edu.ncsu.csc.itrust2.unit.FoodDiaryEntryTest.testGetByPatient(FoodDiaryEntryTest.java:181)
+

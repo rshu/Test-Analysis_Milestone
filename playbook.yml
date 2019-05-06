@@ -1,0 +1,17 @@
+---
+- hosts: all
+  roles:
+    - jenkins
+    - install
+    - fuzzer
+
+  tasks:
+  - name: Include vars
+    include_vars: variables.yml
+
+  - name: Call role 100 times
+    with_sequence: count=100
+    include_role:
+      name: git
+  
+  

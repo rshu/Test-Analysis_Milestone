@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.033 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LabProcedureTest
+testLabProcedure(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.449 s  <<< FAILURE!
+java.lang.AssertionError: expected:<ASSIGNED> but was:<IN_PROGRESS>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedure(LabProcedureTest.java:97)
+
+testGetBy(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.462 s  <<< FAILURE!
+java.lang.AssertionError: expected:<ASSIGNED> but was:<IN_PROGRESS>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testGetBy(LabProcedureTest.java:270)
+
+testLabProcedureForm(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.122 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]> but was:<[2]>
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedureForm(LabProcedureTest.java:358)
+

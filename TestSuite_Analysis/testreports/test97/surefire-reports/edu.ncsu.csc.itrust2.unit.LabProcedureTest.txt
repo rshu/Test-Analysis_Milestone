@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.LabProcedureTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.959 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.LabProcedureTest
+testLabProcedure(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.435 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedure(LabProcedureTest.java:99)
+
+testGetBy(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.359 s  <<< ERROR!
+javax.validation.ConstraintViolationException: 
+Validation failed for classes [edu.ncsu.csc.itrust2.models.persistent.LabProcedure] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='may not be null', propertyPath=visit, rootBeanClass=class edu.ncsu.csc.itrust2.models.persistent.LabProcedure, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testGetBy(LabProcedureTest.java:252)
+
+testLabProcedureForm(edu.ncsu.csc.itrust2.unit.LabProcedureTest)  Time elapsed: 0.157 s  <<< FAILURE!
+java.lang.AssertionError
+	at edu.ncsu.csc.itrust2.unit.LabProcedureTest.testLabProcedureForm(LabProcedureTest.java:351)
+

@@ -1,0 +1,139 @@
+---
+  - name: Include vars
+    include_vars: variables.yml
+    
+  - name: Install add-apt-repostory
+    become: yes
+    apt: name=software-properties-common state=latest
+
+  - name: Add Oracle Java Repository
+    become: yes
+    apt_repository: repo='ppa:webupd8team/java'
+
+  - name: Accept Java 8 License
+    become: yes
+    debconf: name='oracle-java8-installer' question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
+
+  - name: Install Oracle Java 8
+    become: yes
+    apt: name={{item}} state=latest
+    with_items:
+      - oracle-java8-installer
+      - ca-certificates
+      - oracle-java8-set-default
+
+  - name: add jenkins repo key
+    apt_key:
+     url: https://pkg.jenkins.io/debian/jenkins.io.key
+     state: present
+    become: true
+
+  - name: add jenkins repo list file into sources.list.d
+    apt_repository:
+     repo: deb http://pkg.jenkins.io/debian-stable binary/
+     state: present
+    become: true
+
+  - name: install jenkins
+    apt:
+     name: jenkins
+     state: present
+     update_cache: yes
+    become: true
+
+  - name: install git
+    apt:
+     name: git
+     state: present
+    become: true
+
+  - name: Start jenkins server
+    become: yes
+    service:
+      name: jenkins
+      enabled: yes
+      state: restarted
+
+  - name: Allow port 8080
+    become: yes
+    ufw:
+      rule: allow
+      port: 8080
+
+  - name: Allow open ssh
+    become: yes
+    ufw:
+      rule: allow
+      name: OpenSSH
+
+  - name: Allow everything and enable UFW
+    become: yes
+    ufw:
+      state: enabled
+
+    # Make sure Jenkins is ready to run after last restart
+  - name: Ensure Jenkins is up and running
+    become: yes
+    uri:
+      url: http://localhost:8080/login
+      status_code: 200
+      timeout: 5
+    register: jenkins_service_status
+    # Keep trying for 5 mins in 5 sec intervals
+    retries: 60
+    delay: 5
+    until: >
+      'status' in jenkins_service_status and
+      jenkins_service_status['status'] == 200
+
+  - name: read admin pwd
+    become: yes
+    shell: cat /var/lib/jenkins/secrets/initialAdminPassword
+    args:
+      executable: /bin/bash
+    register: adminpwd
+
+  - name: unlock and add admin user
+    jenkins_script:
+      script: |
+        import jenkins.model.*
+        import hudson.security.*
+        def instance = Jenkins.getInstance()
+        def hudsonRealm = new HudsonPrivateSecurityRealm(false)
+        hudsonRealm.createAccount('${user_name}', '${user_pwd}')
+        instance.setSecurityRealm(hudsonRealm)
+        def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
+        strategy.setAllowAnonymousRead(false)
+        instance.setAuthorizationStrategy(strategy)
+        instance.save()
+      args:
+        user_name: "{{ jenkins_user }}"
+        user_pwd: "{{ jenkins_password }}"
+      user: admin
+      password: "{{ adminpwd.stdout }}"
+
+  - name: complete setup wizard
+    jenkins_script:
+      script: |
+        import static jenkins.model.Jenkins.instance as jenkins
+        import jenkins.install.InstallState
+        if (!jenkins.installState.isSetupComplete()) {
+          InstallState.INITIAL_SETUP_COMPLETED.initializeState()
+        }
+      user: admin
+      password: "{{ adminpwd.stdout }}"
+      
+  - name: install plugin
+    become: yes
+    jenkins_plugin:
+      name: "{{ item }}"
+      url_username: admin
+      url_password: "{{ adminpwd.stdout }}"
+    with_items: "{{ jenkins_plugins }}"
+
+  - name: Start jenkins server
+    become: yes
+    service:
+      name: jenkins
+      enabled: yes
+      state: restarted

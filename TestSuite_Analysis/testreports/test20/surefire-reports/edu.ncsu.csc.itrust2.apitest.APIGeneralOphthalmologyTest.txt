@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.941 s <<< FAILURE! - in edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest
+testGeneralOphthalmologyAPI(edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest)  Time elapsed: 0.376 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at edu.ncsu.csc.itrust2.apitest.APIGeneralOphthalmologyTest.testGeneralOphthalmologyAPI(APIGeneralOphthalmologyTest.java:195)
+

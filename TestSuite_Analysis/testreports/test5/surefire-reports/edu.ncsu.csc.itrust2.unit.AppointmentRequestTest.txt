@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.AppointmentRequestTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.076 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.AppointmentRequestTest
+testOpthalmologyAppointmentRequest(edu.ncsu.csc.itrust2.unit.AppointmentRequestTest)  Time elapsed: 0.051 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.AppointmentRequestTest.testOpthalmologyAppointmentRequest(AppointmentRequestTest.java:82)
+
+testGeneralCheckupAppointmentRequest(edu.ncsu.csc.itrust2.unit.AppointmentRequestTest)  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.AppointmentRequestTest.testGeneralCheckupAppointmentRequest(AppointmentRequestTest.java:36)
+
+testGeneralOpthalmologyAppointmentRequest(edu.ncsu.csc.itrust2.unit.AppointmentRequestTest)  Time elapsed: 0.013 s  <<< ERROR!
+java.lang.NullPointerException
+	at edu.ncsu.csc.itrust2.unit.AppointmentRequestTest.testGeneralOpthalmologyAppointmentRequest(AppointmentRequestTest.java:59)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.071 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest
+testOphthalmologySurgery(edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest)  Time elapsed: 0.054 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.testOphthalmologySurgery(OphthalmologySurgeryTest.java:47)
+
+testOphthalmologySurgeryForm(edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest)  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.OphthalmologySurgeryTest.testOphthalmologySurgeryForm(OphthalmologySurgeryTest.java:154)
+

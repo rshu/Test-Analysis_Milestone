@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.04 s <<< FAILURE! - in edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest
+testMissingBHM(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testMissingBHM(GeneralOphthalmologyTest.java:184)
+
+testGeneralOphthalmology(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testGeneralOphthalmology(GeneralOphthalmologyTest.java:44)
+
+testGeneralOphthalmologyForm(edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest)  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.IllegalArgumentException: Diastolic must be a 3 digit positive number.
+	at edu.ncsu.csc.itrust2.unit.GeneralOphthalmologyTest.testGeneralOphthalmologyForm(GeneralOphthalmologyTest.java:164)
+
